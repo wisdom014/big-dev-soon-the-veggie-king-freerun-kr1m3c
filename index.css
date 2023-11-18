@@ -1,19 +1,353 @@
-/* This is an example CSS file, feel free to remove/edit it anytime */
-.footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 10px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+
+/* NAV */
+header nav #menu-list {
+  list-style: none;
+  display: flex;
+    flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+header nav ul li a {
+text-decoration: none;
+  font-size: 0.9rem;
+  font-family: sans-serif;
+    color: black;
+}
+a:hover {
+color: green;
+}
+header nav {
+  display: grid;
+  grid-template-columns: 2fr 1fr ;
+          box-shadow: 0px 5px 15px 2px rgba(0, 0, 0, 0.41);
+            -webkit-box-shadow: 0px 5px 15px 2px rgba(0, 0, 0, 0.41);
+            -moz-box-shadow: 0px 5px 15px 2px rgba(0, 0, 0, 0.41);
+}
+
+/* HEADER */
+.header-p {
+  position: relative;
+  text-align:center;
+  margin-left: -184px;
+  font-size: 0.6rem;
+    top: 25px;
+  }
+.header-p2 {
+  position: relative;
+    text-align: center;
+    margin-left: -290px;
+    font-size: 0.6rem;
+    top: 25px;
+}
+.header-h1 {
+    position: relative;
+text-align: center;
+  margin-right: 100px;
+  font-size: 2.2rem;
+      top: 30px;
+}
+.header-h2 {
+    position: relative;
+text-align: center;
+  margin-right: 142px;
+  font-size: 2.2rem;
+      top: 30px;
+}
+
+
+/* CONTAINER */
+.container {
+  display: flex;
+  height: 40vh;
+}
+
+
+/* LEFT */
+.side1 {
+  background-color: white;
+      display: flex;
+      /* flex-wrap: wrap; */
+      flex-direction: column;
+        justify-content: center;
+  flex: 75;
+}
+.side1 img {
+  position: relative;
+  width: 60px;
+  top: 20px;
+}
+
+
+/* RIGHT */
+.side2 {
+  position: relative;
+  flex: 25%;
+  background-color: green;
+}
+.side2 img {
+  position: relative;
+  width: 240px;
+  top: 26px;
+  right: 155px;
+}
+
+
+/* BUTTON */
+.button {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
-
-.footer a {
-  font-size: 14px;
+button {
+  z-index: 2;
+    position: relative;
+    top: 30px;
+  margin-right: 269px;
+  width: fit-content;
+  padding: 6px;
+  cursor: pointer;
+  transition: all .3s ease;
+  color: black;
   font-weight: bold;
-  text-decoration: none;
+  font-family: Arial, sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background-image: linear-gradient(-90deg,#ff6a00 ,#fbc800 );
+  border-radius: 10px;
+}
+button:hover {
+  color: #fff;
 }
 
-.footer span {
-  font-size: 14px;
+
+/* ABOUT */
+.about-l {
+  position: relative;
+width: 260px;
+height: 260px;
+border-radius: 50%;
+background-color: green;
+left: -90px;
+/* top: -26px; */
+        box-shadow: 0px 5px 15px 2px rgba(0, 0, 0, 0.41);
+          -webkit-box-shadow: 0px 5px 15px 2px rgba(0, 0, 0, 0.41);
+          -moz-box-shadow: 0px 5px 15px 2px rgba(0, 0, 0, 0.41);
 }
+.about-l img {
+  position: relative;
+  width: 200px;
+  left: 128px;
+  top: 30px;
+  border-radius: 50%;
+            box-shadow: 0px 5px 15px 2px rgba(0, 0, 0, 0.41);
+              -webkit-box-shadow: 0px 5px 15px 2px rgba(0, 0, 0, 0.41);
+              -moz-box-shadow: 0px 5px 15px 2px rgba(0, 0, 0, 0.41);
+}
+.about {
+  display: flex;
+  height: 40vh;
+    flex-wrap: wrap;
+  align-items: center;
+}
+.about-2 {
+  position: relative;
+  flex: 70;
+    margin-left: 60px;
+}
+.about-2 h1 {
+font-size: 1rem;
+margin-bottom: 8px;
+}
+.about-2 h5 {
+  margin-bottom: 8px;
+  color: gold;
+}
+.about-2 p {
+font-size: 0.7rem;
+}
+
+
+/* MENU 3 */
+.menu-3 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+flex: 100;
+text-align: center;
+}
+.menu-3 h1 {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+.menu-3 h5 {
+  margin-bottom: 8px;
+  color: gold;
+}
+.menu-3 p {
+  font-size: 0.7rem;
+}
+
+
+/* CARD */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.card {
+  border-radius: 7px;
+  border: 1px solid white;
+  margin: 10px;
+  grid-row: 1/3;
+      box-shadow: 0px 5px 15px 2px rgba(0, 0, 0, 0.41);
+        -webkit-box-shadow: 0px 5px 15px 2px rgba(0, 0, 0, 0.41);
+        -moz-box-shadow: 0px 5px 15px 2px rgba(0, 0, 0, 0.41);
+}
+.card img {
+  width: 100%;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+  object-fit: cover;
+  margin-bottom: 9px;
+    box-shadow: 0px 5px 15px 2px rgba(0, 0, 0, 0.41);
+      -webkit-box-shadow: 0px 5px 15px 2px rgba(0, 0, 0, 0.41);
+      -moz-box-shadow: 0px 5px 15px 2px rgba(0, 0, 0, 0.41);
+}
+.card h2 {
+  margin-top: 0;
+  font-size: 1rem;
+}
+.card p {
+  font-size: 0.7rem;
+}
+
+
+/* GALLERY */
+.photo {
+  display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    box-shadow: 0px 5px 15px 2px rgba(0, 0, 0, 0.41);
+    -webkit-box-shadow: 0px 5px 15px 2px rgba(0, 0, 0, 0.41);
+    -moz-box-shadow: 0px 5px 15px 2px rgba(0, 0, 0, 0.41);
+}
+.photo img {
+  width: 100%;
+}
+.gallery {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex: 100;
+  text-align: center;
+}
+.gallery h1 {
+  font-size: 1rem;
+  margin-top: 50px;
+  margin-bottom: 18px;
+}
+
+
+/* CONTACTS */
+.contacts {
+  display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 100;
+    text-align: center;
+    margin-top: 50px;
+}
+.contacts h1 {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+.contacts h2 {
+    font-size: 1rem;
+    margin: 5px 2px 3px 2px;
+}
+.contacts p {
+font-size: 0.8rem;
+    margin: 2px 1px 10px 1px;}
+.contacts h5 {
+  margin-bottom: 8px;
+  color: gold;
+}
+.contacts .grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+.contacts .grid div {
+      box-shadow: 0px 5px 15px 2px rgba(0, 0, 0, 0.41);
+        -webkit-box-shadow: 0px 5px 15px 2px rgba(0, 0, 0, 0.41);
+        -moz-box-shadow: 0px 5px 15px 2px rgba(0, 0, 0, 0.41);
+  border-radius: 35px;
+  border: 1px solid white;
+  width: fit-content;
+}
+
+
+/* FOOTER */
+.logo {
+  margin-left: 30px;
+}
+footer nav #menu-list {
+  list-style: none;
+  display: flex;
+    flex-wrap: wrap;
+  justify-content: space-around;
+    margin-top: 8px;
+}
+footer nav ul
+li
+a {
+  text-decoration: none;
+  font-size: 0.65rem;
+  font-weight: bolder;
+  font-family: sans-serif;
+  color: black;
+}
+footer nav {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+    padding: 10px;
+}
+footer {
+  background-color: silver;
+  width: 100%;
+}
+footer p {
+  font-size: 0.7rem;
+  font-weight: lighter;
+      margin-top: 8px;
+}
+footer .line {
+  width: 100%;
+  height: 0.1px;
+  background-color: black;
+    padding: 0;
+}
+.seg {
+  /* margin: 15px; */
+  padding: 10px;
+  font-size: 0.8rem;
+  margin-left: 30px;
+}
+
+/* RESPONSIVENESS */
+/* @media screen and (max-width: ) {
+  
+} */
